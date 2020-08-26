@@ -50,7 +50,7 @@ app.post('/action', function (req, res) {
 });
 
 app.get('/actions', function (req, res) {
-
+  console.log(settingsBill.colorDisplay());
   res.render('actions', { actions: settingsBill.actions() });
 
 });
